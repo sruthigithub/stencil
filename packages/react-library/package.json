@@ -1,0 +1,32 @@
+{
+  "name": "react-library",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "sruthi <sruthi@cpanel.net>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+     "dist"
+  ],
+  "scripts": {
+    "test": "node ./__tests__/react-library.test.js",
+    "build": "npm run tsc",
+    "tsc": "tsc -p . --outDir ./dist"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@stencil/react-output-target": "^0.7.0",
+    "stencil-library": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
